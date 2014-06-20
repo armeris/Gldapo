@@ -35,7 +35,7 @@ class GldapoDirectoryTest extends GroovyTestCase
         def d = new GldapoDirectory("testTemplate", c)
         assertNotNull(d)
         assertEquals(50, d.searchControls.countLimit)
-        assertEquals("ou=example, ou=com", d.template.contextSource.base as String)
+        assertEquals("ou=example,ou=com", d.template.contextSource.base as String)
         assertEquals("testTemplate", d.name)
     }
     
